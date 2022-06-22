@@ -1,10 +1,9 @@
 body {
   font-family: arial;
-  color: #ccc;
+  color: #333;
 }
 h1 {
   font-weight: normal;
-  color: #ccc;
   margin: 20px auto;
   text-align: center;
 }
@@ -20,6 +19,31 @@ input {
   width: 100%;
   box-sizing: border-box;
   border-radius: 10px;
-  border: 3px solid #ccc);
+  border: 3px solid #ccc;
   outline: none !important;
+}
+
+input.valid {
+  border-color: #2eca67;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+input + p {
+  font-family: arial;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+  color: red;
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 20px;
 }
